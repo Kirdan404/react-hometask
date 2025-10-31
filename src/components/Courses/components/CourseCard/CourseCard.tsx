@@ -1,6 +1,9 @@
 import { mockedCoursesList, mockedAuthorsList } from "../../../../constants";
 import Button from "../../../../common/Button/Button";
 import '../../../../App.css';
+import getCourseDuration from "../../../../helpers/getCourseDuration";
+import formatCreationDate from "../../../../helpers/formatCreationDate";
+import getAuthros from "../../../../helpers/getAuthors";
 
 type CourseCardProps = {
   title: string;
@@ -10,7 +13,7 @@ type CourseCardProps = {
   created: string;
 };
 
-export default function CourseCard({title, description, authors, duration,       created}: CourseCardProps) {
+export default function CourseCard({title, description, authors, duration,      created}: CourseCardProps) {
     return (
         <div className="cousreCard">
             <div className="leftPart">
@@ -18,9 +21,10 @@ export default function CourseCard({title, description, authors, duration,      
                 <p>{description}</p>
             </div>
             <div className="rightPart">
-                <p><b>Authors: </b>{authors}</p>
-                <p><b>Duration: </b>{duration}</p>
-                <p><b>Created: </b>{created}</p>
+                <p><b>Authors: </b>{getAuthros(authors).join(", ")}</p>
+                <p><b>Duration: </b>{getCourseDuration(duration)}</p>
+                <p><b>Created: </b>{formatCreationDate(created)}</p>
+                <Button buttonText="SHOW COURSE" onClick={() => alert('show course')} />
             </div>
         </div>
     );

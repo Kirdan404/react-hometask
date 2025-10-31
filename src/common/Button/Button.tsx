@@ -4,5 +4,5 @@ type ButtonProps = {
 };
 
 export default function Button({ buttonText, onClick }: ButtonProps) {
-  return <button onClick={onClick}>{buttonText}</button>;
+  return <button className='btn' onClick={onClick}>{buttonText}</button>;
 }
