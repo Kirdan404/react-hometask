@@ -2,6 +2,9 @@ import CourseCard from "./components/Courses/components/CourseCard/CourseCard";
 import Header from "./components/Header/Header";
 import Courses from "./components/Courses/Courses";
 import { mockedCoursesList, mockedAuthorsList } from "./constants";
+import EmptyCourseList from "./components/EmptyCourseList/EmptyCourseList";
+import "./App.css";
+import SearchBar from "./components/Courses/SearchBar/SearchBar";
 
 type CourseCardProps = {
     title: string;
@@ -10,9 +13,14 @@ type CourseCardProps = {
 
 export default function App() {
     return (
-        <>
+        <div className="appLayout">
             <Header />
-            <Courses />
-        </>
+            
+            <main className="content">
+                <SearchBar />
+                <Courses />
+                {/* <EmptyCourseList /> */}
+            </main>
+        </div>
     );
 }

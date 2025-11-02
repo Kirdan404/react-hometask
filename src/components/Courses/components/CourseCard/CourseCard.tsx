@@ -21,7 +21,7 @@ export default function CourseCard({title, description, authors, duration,      
                 <p>{description}</p>
             </div>
             <div className="rightPart">
-                <p><b>Authors: </b>{getAuthros(authors).join(", ")}</p>
+                <p className="authors"><b>Authors: </b>{getAuthros(authors).join(", ")}</p>
                 <p><b>Duration: </b>{getCourseDuration(duration)}</p>
                 <p><b>Created: </b>{formatCreationDate(created)}</p>
                 <Button buttonText="SHOW COURSE" onClick={() => alert('show course')} />
