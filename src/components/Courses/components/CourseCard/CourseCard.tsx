@@ -4,6 +4,7 @@ import '../../../../App.css';
 import getCourseDuration from "../../../../helpers/getCourseDuration";
 import formatCreationDate from "../../../../helpers/formatCreationDate";
 import getAuthros from "../../../../helpers/getAuthors";
+import CourseInfo from "../../../CourseInfo/CourseInfo";
 
 type CourseCardProps = {
   title: string;
@@ -16,15 +17,15 @@ type CourseCardProps = {
 export default function CourseCard({title, description, authors, duration,      created}: CourseCardProps) {
     return (
         <div className="cousreCard">
-            <div className="leftPart">
+            <div className="leftPartCourseCard">
                 <h2>{title}</h2>
                 <p>{description}</p>
             </div>
-            <div className="rightPart">
+            <div className="rightPartCourseCard">
                 <p className="authors"><b>Authors: </b>{getAuthros(authors).join(", ")}</p>
                 <p><b>Duration: </b>{getCourseDuration(duration)}</p>
                 <p><b>Created: </b>{formatCreationDate(created)}</p>
-                <Button buttonText="SHOW COURSE" onClick={() => alert('show course')} />
+                <Button buttonText="SHOW COURSE" onClick={() => CourseInfo()} />
             </div>
         </div>
     );

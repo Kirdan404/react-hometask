@@ -5,6 +5,7 @@ import { mockedCoursesList, mockedAuthorsList } from "./constants";
 import EmptyCourseList from "./components/EmptyCourseList/EmptyCourseList";
 import "./App.css";
 import SearchBar from "./components/Courses/SearchBar/SearchBar";
+import CourseInfo from "./components/CourseInfo/CourseInfo";
 
 type CourseCardProps = {
     title: string;
@@ -18,6 +19,7 @@ export default function App() {
             
             <main className="content">
                 <SearchBar />
+                {/* <CourseInfo /> */}
                 <Courses />
                 {/* <EmptyCourseList /> */}
             </main>

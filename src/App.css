@@ -8,7 +8,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -55,11 +55,11 @@
   margin: 25px auto;
 }
 
-.leftPart {
+.leftPartCourseCard {
   padding: 20px;
 }
 
-.rightPart {
+.rightPartCourseCard {
   padding: 20px;
 }
 
@@ -125,4 +125,77 @@
 
 .addNewCourse button {
   display: none;
+}
+
+.containerInfo {
+  margin-top: 30px;
+}
+
+.courseInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  padding: 32px 40px;
+  background-color: #fff;
+  max-width: 1120px;
+}
+
+.courseInfo__description h3 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333e48;
+}
+
+.courseInfo__description p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333e48;
+}
+
+.courseInfo__meta {
+  border-left: 1px solid #cfcfcf ;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.courseInfo__meta dl {
+  margin: 0;
+  display: grid;
+  row-gap: 16px;
+}
+
+.courseInfo__meta dl > div {
+  display: flex;
+  align-items: baseline;
+  column-gap: 12px;     
+}
+
+.courseInfo__meta dt {
+  font-weight: 700;
+  color: #333e48;
+  margin: 0;
+  min-width: 120px;
+}
+
+.courseInfo__meta dd {
+  margin: 0;
+  font-weight: 400;
+  color: #616c76;
+}
+
+.backButtonCourseInfo {
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.backButtonCourseInfo button {
+  margin-right: 0px;
+  width: 185px;
 }
