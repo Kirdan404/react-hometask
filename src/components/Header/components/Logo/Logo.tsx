@@ -1,7 +1,10 @@
-import logo from '../../../../assets/logo.png';
+type LogoProps = {
+    source: string;
+    alternativeText: string;
+};
 
-export default function Logo() {
+export default function Logo(props: LogoProps) {
     return (
-        <img src={logo} alt='logo' />
+        <img src={props.source} alt={props.alternativeText} />
     );
 }

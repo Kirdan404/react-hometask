@@ -1,11 +1,17 @@
 import Button from "../../../common/Button/Button";
+import Input from "../../../common/Input/Input";
+import { standardPlaceholder } from "../../../constants";
 
 export default function SearchBar() {
     return (
         <>
         <div className="searchBar">
             <div>
-                <input placeholder="Input text"></input>
+                <Input
+                    className="inputBasic inputSearchBar"
+                    type="text"
+                    placeholder={standardPlaceholder}
+                />
                 <Button buttonText="SEARCH" onClick={() => alert('search')} />
             </div>
             <div className="addNewCourse">

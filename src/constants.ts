@@ -1,3 +1,5 @@
+import logo from './assets/logo.png';
+
 export const mockedCoursesList = [
     {
       id: 'de5aaa59-90f5-4dbc-b8a9-aaf205c551ba',
@@ -43,3 +45,13 @@ export const mockedAuthorsList = [
 ];
 
 export const headerWidth = 1440;
+
+
+
+export const logoUrl = logo;
+
+
+//STRINGS
+export const standardPlaceholder: string = "Input text";
+export const logoAlternativeText: string = "logo";
+export const loginText: string = "login";

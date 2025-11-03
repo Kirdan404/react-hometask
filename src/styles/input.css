@@ -1,0 +1,19 @@
+.inputBasic {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.inputRequired {
+    border-color: #ff0000;
+}
+
+.inputSearchBar {
+    width: 400px;
+}

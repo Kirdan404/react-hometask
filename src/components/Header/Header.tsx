@@ -1,12 +1,20 @@
 import Logo from "./components/Logo/Logo";
 import Button from "../../common/Button/Button";
-import '../../../src/App.css';
+import "../../styles/header.css";
+import { logoUrl, logoAlternativeText, loginText } from "../../constants";
 
-export default function Header() {
-    return (
-        <div className="header">
-            <Logo />
-            <Button buttonText="LOGIN" onClick={() => alert('LOGIN')}/>
-        </div>
-    );
+type HeaderProps = {
+  className?: string;
+};
+
+export default function Header({ className = "header" }: HeaderProps) {
+  return (
+    <div className={className}>
+      <Logo source={logoUrl} alternativeText={logoAlternativeText} />
+      <Button
+        buttonText={loginText.toLocaleUpperCase()}
+        onClick={() => alert(loginText)}
+      />
+    </div>
+  );
 }

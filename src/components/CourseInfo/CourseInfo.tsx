@@ -32,7 +32,7 @@ export default function CourseInfo() {
                             </div>
                             <div>
                                 <dt>Authors:</dt>
-                                <dd>Anna Sidorenko, Valentina Larina</dd>
+                                <dd className="authors">Anna Sidorenko, Valentina Larina</dd>
                             </div>
                         </dl>
                     </aside>
