@@ -12,27 +12,6 @@
   align-items: center;
 }
 
-.btn {
-  height: 50px;
-  border: 0;
-  border-radius: 4px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  background-color: #007298;
-  padding: 0 45px;
-  margin-right: 25px;
-  letter-spacing: 1px;
-}
-
-.header img {
-  width: 111px;
-  /* height: 36px; */
-  margin: 5px;
-  margin-left: 25px;
-}
-
 .cousreCard {
   width: 1122px;
   height: 240px;
@@ -79,42 +58,6 @@
   line-height: 20px;
   letter-spacing: 0px;
   color: #333e48;
-}
-
-.searchBar {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  width: 1122px;
-  margin-top: 70px;
-  margin-bottom: 30px;
-}
-
-.searchBar div {
-  display: flex;
-  gap: 20px;
-}
-
-.searchBar input {
-  width: 400px;
-  height: 50px;
-  padding: 13px 16px;
-  box-sizing: border-box;
-  border: 1px solid #cfcfcf;
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.99)
-}
-
-.searchBar input::placeholder {
-  color: rgba(0, 0, 0, 0.25)
-}
-
-.searchBar button {
-  margin: 0;
-}
-
-.addNewCourse button {
-  display: none;
 }
 
 .containerInfo {

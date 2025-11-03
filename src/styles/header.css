@@ -1,9 +1,12 @@
 .header {
   width: 1440px;
   height: 80px;
-  margin: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header .buttonBasic {
+  margin-right: 25px;
 }

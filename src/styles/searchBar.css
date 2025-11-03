@@ -1,0 +1,35 @@
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 1122px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.searchBar div {
+  display: flex;
+  gap: 20px;
+}
+
+.searchBar .inputSearch {
+  width: 400px;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.99)
+}
+
+.searchBar input::placeholder {
+  color: rgba(0, 0, 0, 0.25)
+}
+
+.searchBar button {
+  margin: 0;
+}
+
+.addNewCourse button {
+  visibility: visible;
+  padding: 0 36px;
+}

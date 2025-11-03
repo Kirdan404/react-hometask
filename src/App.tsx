@@ -13,7 +13,7 @@ export default function App() {
         {/* <CourseInfo /> */}
         {/* <Courses /> */}
         {/* <EmptyCourseList /> */}
-        <LoginPage />
+        {/* <LoginPage /> */}
       </main>
     </div>
   );

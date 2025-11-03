@@ -52,6 +52,9 @@ export const logoUrl = logo;
 
 
 //STRINGS
-export const standardPlaceholder: string = "Input text";
+export const standardPlaceholder: string = "input text";
 export const logoAlternativeText: string = "logo";
 export const loginText: string = "login";
+export const logoutText: string = "logout";
+export const searchText: string = "search";
+export const addNewCourse: string = "add new course";

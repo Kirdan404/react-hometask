@@ -1,23 +1,21 @@
 import Button from "../../../common/Button/Button";
 import Input from "../../../common/Input/Input";
-import { standardPlaceholder } from "../../../constants";
+import { searchText, standardPlaceholder } from "../../../constants";
+import {capitalize} from "../../../helpers/capitalize"
+import "../../../styles/searchBar.css";
 
 export default function SearchBar() {
     return (
         <>
-        <div className="searchBar">
-            <div>
-                <Input
-                    className="inputBasic inputSearchBar"
-                    type="text"
-                    placeholder={standardPlaceholder}
-                />
-                <Button buttonText="SEARCH" onClick={() => alert('search')} />
+            <div className="searchBar">
+                <div>
+                    <Input className="inputBasic inputSearch" type="text" placeholder={capitalize(standardPlaceholder)} />
+                    <Button className="buttonBasic" buttonText={searchText.toLocaleUpperCase()} onClick={() => alert(searchText.toLocaleUpperCase())} />
+                </div>
+                <div className="addNewCourse">
+                    <Button className="buttonBasic" buttonText="ADD NEW COURSE" onClick={() => alert('add new course')} />
+                </div>
             </div>
-            <div className="addNewCourse">
-                <Button buttonText="ADD NEW COURSE" onClick={() => alert('add new course')} />
-            </div>
-        </div>
         </>
     );
 }

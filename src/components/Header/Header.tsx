@@ -10,8 +10,9 @@ type HeaderProps = {
 export default function Header({ className = "header" }: HeaderProps) {
   return (
     <div className={className}>
-      <Logo source={logoUrl} alternativeText={logoAlternativeText} />
+      <Logo className="logoHeader" source={logoUrl} alternativeText={logoAlternativeText} />
       <Button
+        className="buttonBasic"
         buttonText={loginText.toLocaleUpperCase()}
         onClick={() => alert(loginText)}
       />
